@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento - StilCor</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="shortcut icon" href="../assets/paint-brush.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="w-full h-40 flex justify-around items-center shadow-xl">
+        <a href="../index.html">
+            <img class="w-32 h-32 rounded-full" src="../assets/WhatsApp Image 2026-03-18 at 15.17.48.jpeg" alt="Logo StilCor">
+        </a>
+        <nav class="w-2/4 h-full">
+            <ul class="w-full h-full flex justify-around items-center">
+                <li>
+                    <a href="../index.html" class="hover:text-[#9e5809] font-semibold">Home</a>
+                </li>
+                <li>
+                    <a href="./empresa.html" class="hover:text-[#9e5809] font-semibold">Empresa</a>
+                </li>
+                <li>
+                    <a href="./portfolio.html" class="hover:text-[#9e5809] font-semibold">Portfólio</a>
+                </li>
+                <li>
+                    <a href="./downloads.html" class="hover:text-[#9e5809] font-semibold">Downloads</a>
+                </li>
+                <li>
+                    <a href="./contato.html" class="hover:text-[#9e5809] font-semibold">Contato</a>
+                </li>
+                <li>
+                    <a href="./orcamento.html">
+                        <button class="bg-[#c96e07] p-1 w-32 cursor-pointer rounded-xl hover:bg-[#9e5809] text-white transition duration-800 ease-in-out">Fazer orçamento</button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="max-w-6xl mx-auto mt-10 px-6">
+        <div id="produtos" class="grid grid-cols-3 gap-6"></div>
+    </div>
+
+    <div id="modal" class="fixed inset-0 backdrop-blur-sm hidden items-center justify-center z-50">
+        <div class="bg-white p-6 rounded-xl shadow-[0_35px_60px_-15px_rgba(0,0,0,0.6)]
+ max-w-md w-full relative">
+
+            <button id="fecharModal"
+      class="absolute top-2 right-2 text-gray-600 hover:text-black cursor-pointer">
+      ✕
+            </button>
+
+            <div id="modalConteudo"></div>
+
+        </div>
+    </div>
+
+    <script src="../scripts/orcamento.js"></script>
+</body>
+</html>
