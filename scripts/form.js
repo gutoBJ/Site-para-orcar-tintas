@@ -16,3 +16,9 @@ function remover(index) {
   localStorage.setItem("produtosSelecionados", JSON.stringify(produtos))
   location.reload()
 }
+
+const inputProdutos = document.getElementById("inputProdutos")
+
+const lista = produtos.map(p => p.Nome).join(", ")
+
+inputProdutos.value = lista
